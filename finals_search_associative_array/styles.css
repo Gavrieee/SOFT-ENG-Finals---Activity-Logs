@@ -1,0 +1,151 @@
+body {
+    background-color: lightblue;
+    font-family: "Arial";
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.main {
+    background-color: #F0F4F8;
+    color: #37474F;
+    text-align: center;
+    margin: 100px;
+    padding: 20px 30px 20px 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    width: 40%;
+}
+
+.outerMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input[type='text'],
+input[type='password'], input[type='number'] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.innerMain {
+    background-color: none;
+
+}
+
+.mainForm {
+    background-color: none;
+    margin: 30px;
+    text-align: left;
+
+}
+
+/* Base button style */
+.submit-button {
+    background-color: #37474F;
+    /* Dark bluish-gray */
+    color: white;
+    /* White text for contrast */
+    padding: 12px 20px;
+    /* Padding for a button look */
+    border: none;
+    /* Remove border for a clean look */
+    border-radius: 30px;
+    /* Optional rounded corners */
+    cursor: pointer;
+    /* Pointer cursor for interactivity */
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions */
+    width: 125px;
+}
+
+/* Hover effect */
+.submit-button:hover {
+    background-color: #455A64;
+    /* Slightly lighter shade for hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow */
+}
+
+/* Active (pressed) effect */
+.submit-button:active {
+    background-color: #263238;
+    /* Even darker shade for active */
+    transform: scale(0.98);
+    /* Slight shrink effect to indicate pressing */
+}
+
+/* Basic input styling */
+input[type="text"], input[type="password"], input[type="number"] {
+    background-color: #F9FAFB;
+    /* Light background color */
+    color: #37474F;
+    /* Text color matching the button */
+    border: 1px solid #B0BEC5;
+    /* Soft border color */
+    padding: 10px 15px;
+    /* Padding for a spacious look */
+    border-radius: 4px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Font size */
+    outline: none;
+    /* Remove default outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions */
+}
+
+/* Focus effect */
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus {
+    border-color: #37474F;
+    /* Darker border on focus */
+    box-shadow: 0px 0px 5px rgba(55, 71, 79, 0.3);
+    /* Subtle shadow for focus */
+}
+
+a.button {
+    display: inline-block;
+    /* Makes the link behave like a block element, like a button */
+    padding: 10px 20px;
+    /* Adds padding inside the button */
+    background-color: #37474F;
+    /* Sets a background color */
+    color: white;
+    /* White text color */
+    text-align: center;
+    /* Centers text inside the button */
+    text-decoration: none;
+    /* Removes the underline */
+    border: none;
+    /* Removes the default border */
+    border-radius: 30px;
+    /* Rounds the corners */
+    font-size: 16px;
+    /* Adjusts the font size */
+    cursor: pointer;
+    /* Shows a pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Smooth transitions for hover effects */
+}
+
+a.button:hover {
+    background-color: #455A64;
+    /* Changes background color on hover */
+    transform: scale(1.05);
+    /* Slight scale effect to give a "pressed" feeling */
+}
+
+a.button:active {
+    background-color: #263238;
+    /* Darker background when the button is clicked */
+    transform: scale(0.98);
+    /* Slightly shrinks the button to simulate clicking */
+}
